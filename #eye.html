@@ -1,0 +1,156 @@
+#eye.Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Reviews | VisionCare Eye Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VisionProve Eye Hospital</h1>
+            <p>Patient Reviews</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>What Our Patients Say</h1>
+        
+        <div class="review-section">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-img1">
+                        <img src="cataract surgery.png" alt="reviewer-img1" width="150" heigth="100">
+                    </div>
+                    <div class="reviewer-info">
+                        <h3>laxmi</h3>
+                        <div class="review-date">March 15, 2025</div>
+                    </div>
+                </div>
+                <div class="rating">★★★★★</div>
+                <div class="review-text">
+                    <p>I had cataract surgery at Vision prove and the results are amazing. The staff was professional and caring throughout the entire process. Doctors explained everything clearly and made me feel comfortable. My vision is now better than it's been in years!</p>
+                </div>
+                <div class="treatment-info">Treatment: Cataract Surgery</div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-img2"><img src="Lasik.png" alt="reviewer-img2" width="150" heigth="100"  ></div>
+                    <div class="reviewer-info">
+                        <h3>Priya</h3>
+                        <div class="review-date">February 28, 2024</div>
+                    </div>
+                </div>
+                <div class="rating">★★★★★</div>
+                <div class="review-text">
+                    <p>Excellent LASIK experience! From the initial consultation to the procedure and follow-up, the team was outstanding. The procedure was quick and painless, and now I have 20/20 vision without glasses for the first time in 20 years. Highly recommend!</p>
+                </div>
+                <div class="treatment-info">Treatment: LASIK Vision Correction</div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-img3"><img src="glaucoma.png" alt="reviewer-img3" width="150" heigth="100" ></div>
+                    <div class="reviewer-info">
+                        <h3>Venu</h3>
+                        <div class="review-date">January 10, 2025</div>
+                    </div>
+                </div>
+                <div class="rating">★★★★☆</div>
+                <div class="review-text">
+                    <p>Very professional staff and clean facility. My glaucoma treatment has been effective and the doctors take time to explain everything. The only reason I'm not giving 5 stars is because the wait time can be a bit long sometimes.</p>
+                </div>
+                <div class="treatment-info">Treatment: Glaucoma Management</div>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-img4"><img src="pediatric.png" alt="reviewer-img4" width="150" heigth="100"></div>
+                    <div class="reviewer-info">
+                        <h3>Anitha</h3>
+                        <div class="review-date">December 5, 2024</div>
+                    </div>
+                </div>
+                <div class="rating">★★★★★</div>
+                <div class="review-text">
+                    <p>My child needed treatment for a lazy eye and the pediatric ophthalmology team was wonderful. They made my son feel comfortable and explained things in a way he could understand. We've seen great improvement in his vision after just a few months of treatment.</p>
+                </div>
+                <div class="treatment-info">Treatment: Pediatric Ophthalmology</div>
+            </div>
+        </div>
+        
+        <div class="add-review">
+            <h2>Share Your Experience</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="treatment">Treatment Received</label>
+                    <select id="treatment" name="treatment" required>
+                        <option value="">Select Treatment</option>
+                        <option value="Cataract Surgery">Cataract Surgery</option>
+                        <option value="LASIK">LASIK Vision Correction</option>
+                        <option value="Glaucoma">Glaucoma Treatment</option>
+                        <option value="Retina">Retina Services</option>
+                        <option value="Pediatric">Pediatric Ophthalmology</option>
+                        <option value="Other">Other Treatment</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Your Rating</label>
+                    <div class="rating-input">
+                        <span>Rating:</span>
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review">Your Review</label>
+                    <textarea id="review" name="review" required></textarea>
+                </div>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 VisionProve Eye Hospital. All Rights Reserved.</p>
+            <p>123 Medical Drive, Health City, HC 12345 | Phone: (555) 123-4567</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            alert('Thank you for your review! It will be published after moderation.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
